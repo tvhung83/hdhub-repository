@@ -6,6 +6,7 @@ categories = [
     { 'code': 'hongkong-series', 'title': 'Phim Bộ Hồng Kông' },
     { 'code': 'us-tv-series', 'title': 'Phim Bộ Mỹ' },
     { 'code': 'documentary', 'title': 'Phim Tài Liệu' },
+    { 'code': '18', 'title': 'Phim 18+' },
     { 'code': 'animation', 'title': 'Hoạt Hình' },
     { 'code': 'mystery', 'title': 'Huyền Bí' },
     { 'code': 'sci-fi', 'title': 'Viễn Tưởng' },
