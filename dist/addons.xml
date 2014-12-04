@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 <addon id="plugin.video.hdrepo"
-       name="HDrepo"
-       version="0.0.1a"
-       provider-name="HDrepo - Reloaded">
+       name="HDrepo - Reloaded"
+       version="0.0.1"
+       provider-name="Robert">
     <requires>
 		<import addon="xbmc.python" version="2.1.0" />
     </requires>

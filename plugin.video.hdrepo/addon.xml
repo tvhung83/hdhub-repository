@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addons>
 <addon id="plugin.video.hdrepo"
-       name="HDrepo"
-       version="0.0.1a"
-       provider-name="HDrepo - Reloaded">
+       name="HDrepo - Reloaded"
+       version="0.0.1"
+       provider-name="HDrepo">
     <requires>
-		<import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0" />
     </requires>
     <extension point="xbmc.python.pluginsource"
                library="default.py">
@@ -14,8 +13,7 @@
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <language>en</language>
-		<summary lang="en">Xem phim HD trên server fshare</summary>
-		<description lang="en">Add-on cho phép xem trực tiếp phim HD được lưu trữ trên dịch vụ fshare.</description>
+    <summary lang="en">Xem phim HD trên server fshare</summary>
+    <description lang="en">Add-on cho phép xem trực tiếp phim HD được lưu trữ trên dịch vụ fshare.</description>
     </extension>
 </addon>
-</addons>
