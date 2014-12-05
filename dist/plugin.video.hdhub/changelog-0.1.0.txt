@@ -1,0 +1,10 @@
+0.1.0
+ 
+- Restructure source folders.
+- Use repository for auto update.
+- Update icon & fan art.
+- Remove fan art inside add-on zip.
+- Fix bug of pagination.
+- Add 'title' info to fix subtitle searching function
+- Fix bug of 'null' filename.
+- Fix bug of wrong category name.
