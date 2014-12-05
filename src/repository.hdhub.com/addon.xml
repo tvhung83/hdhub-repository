@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.hdhub.com"
 		name="HDhub Add-on Repository"
-		version="0.1.0"
 		provider-name="hdhub">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
