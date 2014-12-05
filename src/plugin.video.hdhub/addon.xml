@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.video.hdhub"
-       name="HDHub"
+       name="HDhub - HD for all"
        version="0.1.0"
        provider-name="hdhub">
     <requires>
