@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import re
 import urllib
 import urlparse
 import xbmcgui
@@ -54,9 +55,12 @@ elif mode[0] == 'category':
                                     listitem=li, isFolder=True)
     # Build set of pages to display
     n = items['total']
-    pages = (set(range(1, 2))
-             | set(range(max(1, int(page) - 2), min(int(page) + 3, n + 1)))
-             | set(range(n - 2, n + 1)))
+    if n <= 5:
+        pages = set(range(1, n + 1))
+    else:
+        pages = (set(range(1, 2))
+                 | set(range(max(1, int(page) - 2), min(int(page) + 3, n + 1)))
+                 | set(range(n - 2, n + 1)))
     for p in sorted(pages):
         if p != int(page):
             add_page(str(p), category)
@@ -66,7 +70,8 @@ elif mode[0] == 'item':
     id = args.get('id')[0]
     item = json.load(urllib.urlopen(feeds_prefix + '/id/' + id))
     for link in item['links']:
-        direct_url = direct_prefix + link['link'][link['link'].index('/file/'):]
+        url = direct_prefix + re.search('\/file\/(\w+)', link['link']).group(0)
         li = xbmcgui.ListItem(link['filename'], iconImage=item['thumbnail'])
-        xbmcplugin.addDirectoryItem(handle=addon_handle, url=direct_url, listitem=li)
+        li.setInfo('video', { 'title': item['title'] })
+        xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
     xbmcplugin.endOfDirectory(addon_handle)
