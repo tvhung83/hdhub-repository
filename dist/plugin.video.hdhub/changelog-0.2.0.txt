@@ -1,0 +1,7 @@
+0.2.0
+ 
+- Add search function.
+- Group category folders.
+- Correct video info.
+- Open dialog before playing.
+- Fix bug of page counting.
