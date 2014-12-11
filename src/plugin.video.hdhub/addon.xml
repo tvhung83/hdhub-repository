@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.video.hdhub"
-       name="HDhub - HD for all"
-       version="0.2.0"
-       provider-name="hdhub">
-    <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <language>en</language>
-    <summary lang="en">Xem phim HD trên server fshare</summary>
-    <description lang="en">Add-on cho phép xem trực tiếp phim HD được lưu trữ trên dịch vụ fshare.</description>
-    </extension>
+ name="HDhub - HD for all"
+ version="0.2.1"
+ provider-name="hdhub">
+ <requires>
+  <import addon="xbmc.python" version="2.1.0" />
+  <import addon="script.module.parsedom" version="0.9.1" />
+</requires>
+<extension point="xbmc.python.pluginsource"
+ library="default.py">
+ <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <platform>all</platform>
+  <language>en</language>
+  <summary lang="en">Xem phim HD trên server fshare</summary>
+  <description lang="en">Add-on cho phép xem trực tiếp phim HD được lưu trữ trên dịch vụ fshare.</description>
+</extension>
 </addon>
