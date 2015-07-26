@@ -69,7 +69,7 @@ elif mode[0] == 'genre':
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url,
                                     listitem=li, isFolder=True)
     
-    pages = pagination(math.ceil(float(items['total'])/10), page)
+    pages = pagination(int(math.ceil(float(items['total'])/10)), page)
     for p in sorted(pages):
         if p != int(page):
             add_genre_page(str(p), genre)
@@ -86,7 +86,7 @@ elif mode[0] == 'series':
         li.setProperty('IsPlayable', 'true')
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
     
-    pages = pagination(math.ceil(float(items['total'])/10), page)
+    pages = pagination(int(math.ceil(float(items['total'])/10)), page)
     for p in sorted(pages):
         if p != int(page):
             add_series_page(str(p), series)

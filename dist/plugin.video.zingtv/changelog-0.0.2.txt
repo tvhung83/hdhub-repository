@@ -1,0 +1,4 @@
+0.0.2
+ 
+- Fix bug: pagination.
+- Fix bug: MD5 failed after downloading.
