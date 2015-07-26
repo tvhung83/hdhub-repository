@@ -19,4 +19,23 @@
 		<description lang="en">Add-on cho phép xem trực tiếp phim HD được lưu trữ trên dịch vụ fshare.</description>
     </extension>
 </addon>
+<addon id="plugin.video.zingtv"
+       name="ZingTV"
+       version="0.0.1"
+       provider-name="hdhub">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+      <import addon="script.module.parsedom" version="0.9.1" />
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+    <summary lang="en">Zing TV - Truyền hình, Phim, Giáo Dục</summary>
+    <description lang="en">TV Show, Hài Kịch, Phim Truyền Hình chất lượng HD. Trang video có bản quyền duy nhất tại Việt Nam.</description>
+    </extension>
+</addon>
 </addons>
